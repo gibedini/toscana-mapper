@@ -1,0 +1,14 @@
+Package: toscanamappeR
+Title: A Map Of Tuscany
+Version: 0.0.0.9000
+Authors@R: 
+    person("Gianni", "Bedini", , "gianni.bedini@unipi.it", role = c("aut", "cre"))
+Description: This package provides an sf object with the geographic boundaries of Tuscany and 
+      its provinces.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.1
+Depends: 
+    R (>= 2.10)
+LazyData: true
