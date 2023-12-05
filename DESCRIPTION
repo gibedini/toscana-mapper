@@ -1,6 +1,6 @@
 Package: toscanamappeR
 Title: A Map Of Tuscany
-Version: 0.0.0.9000
+Version: 0.1.0
 Authors@R: 
     person("Gianni", "Bedini", , "gianni.bedini@unipi.it", role = c("aut", "cre"))
 Description: This package provides three sf objects with the geographic boundaries of Tuscany, 
@@ -12,3 +12,4 @@ RoxygenNote: 7.2.1
 Depends: 
     R (>= 2.10)
 LazyData: true
+LazyDataCompression: bzip2

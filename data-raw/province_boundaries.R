@@ -2,6 +2,11 @@
 library(here)
 library(sf)
 
-toscanaR <- st_read(here("data-raw","toscana_shp_32632.shp"))
+toscana_provinces <- st_read(here("data-raw","province","TOS_province.shp"))
+my_crs <- sf::st_crs(toscana_provinces)$wkt
 
-usethis::use_data(toscanaR, overwrite = TRUE)
+repl_crs <- gsub("(\\d+)\\°([A-Z])", "\\1deg \\2", my_crs, perl = TRUE)
+
+sf::st_crs(toscana_provinces)$wkt <- repl_crs
+
+usethis::use_data(toscana_provinces, overwrite = TRUE)
